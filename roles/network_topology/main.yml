@@ -1,0 +1,9 @@
+---
+- name: Ensure hostnameis set based on the inventory
+  command: echo {{ inventory_hostname }} > /etc/hostname
+
+- name: Create a loopack interface (simulatinga basic network configuration)
+  command: ip addr add 10.0.0.1/32 dev lo
+
+- name: Add a static route 
+  command: ip route add 192.168.1.0/24 via 172.17.0.1

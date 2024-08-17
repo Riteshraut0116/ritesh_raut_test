@@ -1,0 +1,6 @@
+---
+- name: Configure the Sample Network Topology
+  hosts: all
+  become; yes
+  roles:
+    - network_topology

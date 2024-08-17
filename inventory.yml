@@ -1,0 +1,9 @@
+all:
+  hosts:
+    router1:
+      ansible_host: 172.17.0.2 #Replace with theactual Docker container IP
+    router2:
+      ansible_host: 172.17.0.3
+    switch1:
+      ansible_host: 172.17.0.4
+  
