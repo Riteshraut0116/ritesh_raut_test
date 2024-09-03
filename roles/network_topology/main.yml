@@ -1,5 +1,5 @@
 ---
-- name: Ensure hostnameis set based on the inventory
+- name: Ensure host name is set based on the inventory
   command: echo {{ inventory_hostname }} > /etc/hostname
 
 - name: Create a loopack interface (simulatinga basic network configuration)
